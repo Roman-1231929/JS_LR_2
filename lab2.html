@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №2 — JavaScript</title>
+</head>
+<body>
+  <h1>Лабораторна робота №2</h1>
+  <h2>Тема: Змінні та оператори в JavaScript</h2>
+  <p>Рівень 4-6 балів</p>
+
+  <script>
+    // ===== Завдання 1 =====
+    let userName = prompt("Enter your name:");
+    alert(`Hello, ${userName}! Welcome to JavaScript`);
+
+    // ===== Завдання 2 =====
+    let age = prompt("Enter your age:");
+    let currentYear = new Date().getFullYear();
+    let birthYear = currentYear - age;
+    alert(`You were born in ${birthYear}.`);
+
+    // ===== Завдання 3 =====
+    let firstName = prompt("Enter your first name:");
+    let lastName = prompt("Enter your last name:");
+
+    // Варіант 1 — через конкатенацію
+    console.log("Your full name is " + firstName + " " + lastName);
+
+    // Варіант 2 — через шаблонний рядок
+    console.log(`Your full name is ${firstName} ${lastName}`);
+  </script>
+</body>
+</html>
